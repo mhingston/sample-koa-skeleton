@@ -1,0 +1,40 @@
+{
+  "name": "sample-koa-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "docker:build": "docker build --tag sample/koa-skeleton ."
+  },
+  "keywords": [],
+  "author": "Miles Hingston <miles@bitshift.cc>",
+  "license": "ISC",
+  "dependencies": {
+    "blakejs": "^1.1.0",
+    "dotenv": "^4.0.0",
+    "http-status-codes": "^1.3.0",
+    "jsonwebtoken": "^8.0.1",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-helmet": "^3.2.0",
+    "koa-multer": "^1.0.2",
+    "koa-rate-limit": "github:mhingston/koa-rate-limit",
+    "koa-router": "^7.2.1",
+    "koa2-cors": "^2.0.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "node-vault": "github:mhingston/node-vault",
+    "nodemailer": "^4.1.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "tedious-wrapper": "github:mhingston/tedious-wrapper",
+    "uuid": "^3.1.0",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
