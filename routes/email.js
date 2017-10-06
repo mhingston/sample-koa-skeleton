@@ -25,7 +25,7 @@ const main = ({cache, db, logger}) =>
             text: ctx.request.body.text
         };
     
-        SMTP.sendMail(mailOptions);
+        await SMTP.sendMail(mailOptions);
         ctx.body = {message: 'Your email has been sent.'};
     });
 
